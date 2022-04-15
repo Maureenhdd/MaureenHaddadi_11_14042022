@@ -23,10 +23,8 @@ root.render(
       <Route path="/housing" element={<Housing/>} />
       <Route path="/about" element={<About/>} />
       <Route path="*" element={<Error/>} />
-
-
     </Routes>
-  </BrowserRouter>,
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
