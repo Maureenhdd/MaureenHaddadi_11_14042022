@@ -1,3 +1,30 @@
-.hey{
-    background-color :red ; 
+@import "./../../assets/scss/variables.scss";
+
+.header {
+  padding: 30px 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: calc(100% - 300px);
+  background-color: white;
+  &_img {
+    width: 210px;
+    height: 68px;
+    @media (max-width: 1024px) {
+      width: 145px;
+      height: 68px;
+    }
+  }
+  &_link {
+    color: $primary-color;
+    font-size: 24px;
+    margin-right: 20px;
+    @media (max-width: 1024px) {
+      font-size: 12px;
+    }
+  }
+  @media (max-width: 1024px) {
+    padding: 30px;
+  }
 }

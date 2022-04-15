@@ -1,0 +1,18 @@
+@import "./../../assets/scss/variables.scss";
+
+.banner {
+  width: 80%;
+  margin: auto;
+  height: 223px;
+  background-size: cover;
+  background-position: center;
+  border-radius: $radiusXL;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &_title {
+    font-weight: 500;
+    font-size: 48px;
+    color: white;
+  }
+}

@@ -1,10 +1,29 @@
-import React from 'react'
-import './HomePage.scss'
-import styles from './test.module.scss'
-
+import React from "react";
+import "./HomePage.scss";
+import Header from "./../../components/Header/Header";
+import "./../../assets/scss/main.scss";
+import Banner from "../../components/Banner/Banner";
+import imgBanner from "../../assets/img/banner_home.png";
+import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
-    return (<h1 className={styles.hey}>HOMEPAGE</h1>)
-}
+  return (
+    <>
+      <Header />
+      <div className="main">
+        <Banner img={imgBanner} title="Chez vous, partout et ailleurs" />
+        <h1>COUCOU</h1>
+        <h1>COUCOU</h1>
 
-export default Home
+        <h1>COUCOU</h1>
+
+        <h1>COUCOU</h1>
+
+        <h1>COUCOU</h1>
+      </div>
+      <Footer />
+    </>
+  );
+};
+
+export default Home;
