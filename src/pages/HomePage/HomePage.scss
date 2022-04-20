@@ -1,3 +1,12 @@
-.hey{
-    color : pink
-}
+@import "./../../assets/scss/variables";
+
+
+.cards_block {
+    background-color: $secondary-color;
+    border-radius: $radiusXL;
+    padding : 30px; 
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 30px ;
+  }

@@ -7,7 +7,6 @@ type Props = {
   title?: string;
 };
 const Banner = ({ img, title }: Props) => {
-  console.log(img);
   return (
     <div
       className={styles.banner}
