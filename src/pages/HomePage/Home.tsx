@@ -12,7 +12,7 @@ const Home = () => {
     <>
       <Header />
       <div className="main">
-        <Banner img={imgBanner} title="Chez vous, partout et ailleurs" />
+        <Banner img={imgBanner} title="Chez vous, partout et ailleurs" small/>
         <div className="cards_block">
           <Cards
             img="https://images.unsplash.com/photo-1558603668-6570496b66f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"

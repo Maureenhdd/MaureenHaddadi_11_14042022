@@ -13,4 +13,17 @@
     font-size: 48px;
     color: white;
   }
+
+  @media (max-width : 1024px) {
+   border-radius: 10px;
+   padding : 0 110px 0 20px; 
+   
+   &_title{
+     font-size: 24px; 
+   }
+
+   &_small{
+    height: 111px;
+   }
+  }
 }

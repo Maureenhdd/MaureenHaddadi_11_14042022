@@ -5,11 +5,12 @@ import styles from "./Banner.module.scss";
 type Props = {
   img: string;
   title?: string;
+  small?: boolean;
 };
-const Banner = ({ img, title }: Props) => {
+const Banner = ({ img, title, small }: Props) => {
   return (
     <div
-      className={styles.banner}
+      className={`${styles.banner} ${small ? styles.banner_small : ''}`}
       style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0.300)), url(${img})`,
       }}

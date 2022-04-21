@@ -6,6 +6,10 @@
   padding-top: 150px;
   width: 85%;
   margin: auto;
+
+  @media (max-width : 1024px) {
+        width : 90%; 
+  }
 }
 
 body {

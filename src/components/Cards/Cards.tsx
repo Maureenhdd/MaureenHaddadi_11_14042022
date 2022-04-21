@@ -14,13 +14,11 @@ const Cards = ({ img, title, id }: Props) => {
             to={`/housing/${id}`}
             className={styles.cards}
             style={{
-                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0.300)), url(${img})`,
+                backgroundImage: `linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%), url(${img})`,
             }}
         >
-            <div className={styles.cards_bottom}>
-                <p className={styles.cards_title}>{title}</p>
+            <p className={styles.cards_title}>{title}</p>
 
-            </div>
         </Link>
     );
 };

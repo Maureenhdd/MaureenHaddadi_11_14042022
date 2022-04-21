@@ -9,4 +9,10 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin: 30px ;
+
+    @media (max-width : 1024px) {
+        margin : 10px 0 ; 
+        background-color: white;
+        padding : 20px 0;
+    }
   }
