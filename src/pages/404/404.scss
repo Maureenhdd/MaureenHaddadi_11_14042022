@@ -1,23 +1,26 @@
 @import "./../../assets/scss/variables";
 
-* {
-    color: $primary-color;
-    text-align: center;
-}
+
 
 .error {
-
+  
     &_title {
+        color: $primary-color;
+        text-align: center;
         font-size: 288px;
         margin-bottom: 20px;
     }
 
     &_text {
+        color: $primary-color;
+        text-align: center;
         font-size: 36px;
         margin-bottom: 182px;
     }
 
     &_link {
+        color: $primary-color;
+        text-align: center;
         font-size: 18px;
     }
 

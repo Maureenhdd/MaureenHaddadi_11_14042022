@@ -1,0 +1,32 @@
+@import "./../../assets/scss/variables";
+
+.accordion {
+    width : 80%; 
+    margin : 30px auto; 
+    &_top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $primary-color;
+        border-radius: 10px;
+        padding : 0 20px; 
+        color : #ffffff; 
+        font-size: 24px;
+    }
+
+    &_content{
+        background-color: $secondary-color;
+        color: $primary-color;
+        padding : 10px; 
+        border-radius: 10px;
+        font-size: 24px;
+    }
+
+    &_hidden {
+        display: none
+    }
+
+    &_active {
+        display: block;
+    }
+}
