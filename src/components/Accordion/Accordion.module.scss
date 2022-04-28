@@ -1,7 +1,7 @@
 @import "./../../assets/scss/variables";
 
 .accordion {
-    width : 80%; 
+    width : 85%; 
     margin : 30px auto; 
     &_top {
         display: flex;
@@ -9,9 +9,10 @@
         align-items: center;
         background-color: $primary-color;
         border-radius: 10px;
-        padding : 0 20px; 
+        padding : 5px 20px; 
         color : #ffffff; 
         font-size: 24px;
+        font-weight: 500;
     }
 
     &_content{
@@ -20,13 +21,34 @@
         padding : 10px; 
         border-radius: 10px;
         font-size: 24px;
+        transition: 0.2s;
     }
 
     &_hidden {
-        display: none
+        height  : 0 ;
+        overflow: hidden;   
+        padding  : 0;      
     }
 
     &_active {
-        display: block;
+        height: auto;
     }
+
+    &_btn{
+        background-color: transparent;
+        border : none;
+        color : white; 
+        cursor: pointer;
+    }
+}
+
+.i{
+    &_btn{
+        font-size: 24px;
+        transition: 0.2s;
+    }
+    &_active{
+        transform: rotate(180deg);
+    }
+
 }

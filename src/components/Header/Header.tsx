@@ -7,10 +7,8 @@ import { Link, LinkProps, useMatch, useResolvedPath } from "react-router-dom";
 function CustomLink({ children, to, ...props }: LinkProps) {
   let resolved = useResolvedPath(to);
   let match = useMatch({ path: resolved.pathname, end: true });
-  console.log(resolved);
   return (
     <Link
-      // style={{ textDecoration: match ? "underline" : "none" }}
       className={`${styles.header_link} ${match ? styles.activeLink : ""}`}
       to={to}
       {...props}

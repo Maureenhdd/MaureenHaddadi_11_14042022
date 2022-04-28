@@ -6,21 +6,23 @@ import { useState } from "react";
 type Props = {
     title: string;
     text: string;
-    id: number; 
+    id: number;
 };
-const Accordion = ({ text, title , id}: Props) => {
+
+
+const Accordion = ({ text, title, id }: Props) => {
     const [active, setActive] = useState(false)
     return (
         <>
             <div className={styles.accordion} key={id}>
-                <div className={styles.accordion_top}><h2>{title} </h2>
+                <div className={styles.accordion_top}><p>{title} </p>
                     {
-                        active ? <button onClick={() => {
+                        active ? <button className={styles.accordion_btn} onClick={() => {
                             setActive(false)
-                        }}>-</button> :
-                            <button onClick={() => {
+                        }}><i className={`fa-solid fa-chevron-down ${styles.i_active} ${styles.i_btn}`}></i></button> :
+                            <button className={styles.accordion_btn} onClick={() => {
                                 setActive(true)
-                            }}>+</button>
+                            }}><i className={`fa-solid fa-chevron-down  ${styles.i_btn}`}></i></button>
                     }
                 </div>
 

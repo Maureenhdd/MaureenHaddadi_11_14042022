@@ -6,7 +6,6 @@ import {
   Route,
 } from "react-router-dom";
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Home from './pages/HomePage/Home';
 import Housing from './pages/HousingPage/Housing';
@@ -20,7 +19,7 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/housing" element={<Housing/>} />
+      <Route path="/housing/:id" element={<Housing/>} />
       <Route path="/about" element={<About/>} />
       <Route path="*" element={<Error/>} />
     </Routes>
