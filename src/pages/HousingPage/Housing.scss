@@ -1,0 +1,13 @@
+@import "./../../assets/scss/variables";
+
+
+.housing{
+    &_title{
+        color : $primary-color; 
+    }
+}
+
+.accordion_block{
+    display: flex;
+    justify-content: space-between;
+}

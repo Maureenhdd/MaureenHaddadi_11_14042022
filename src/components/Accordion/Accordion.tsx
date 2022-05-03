@@ -6,7 +6,7 @@ import { useState } from "react";
 type Props = {
     title: string;
     text: string;
-    id: number;
+    id?: number;
 };
 
 
