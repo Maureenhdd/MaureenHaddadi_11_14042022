@@ -23,10 +23,11 @@ const Housing = () => {
                 <p>{rental?.location}</p>
                 <div className="accordion_block">
                 <Accordion title='Description' text={rental!.description} />
-                <Accordion title='Equipements' text={rental!.description} />
+                <Accordion title='Equipements' text={rental!.equipments.map(e => <li>{e}</li>)} />
                 </div>
            
-            </div></>
+            </div>
+            </>
     )
 }
 

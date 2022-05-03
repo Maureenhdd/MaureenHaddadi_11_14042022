@@ -1,16 +1,17 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import "./../../assets/scss/main.scss";
 import styles from "./Accordion.module.scss";
 import { useState } from "react";
 
 type Props = {
     title: string;
-    text: string;
+    text: string | ReactNode;
     id?: number;
+    list? : string[]
 };
 
 
-const Accordion = ({ text, title, id }: Props) => {
+const Accordion = ({ text, title, id, list}: Props) => {
     const [active, setActive] = useState(false)
     return (
         <>
@@ -27,7 +28,7 @@ const Accordion = ({ text, title, id }: Props) => {
                 </div>
 
                 <div className={`${styles.accordion_content} ${active ? styles.accordion_active : styles.accordion_hidden}`}>
-                    <p>{text}</p>
+                   {typeof text === 'string' ? <p>{text}</p>  : <ul>{text}</ul>}
                 </div>
             </div>
 
