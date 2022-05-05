@@ -7,7 +7,6 @@ type Props = {
 
 const Carousel = ({ arrayPicture }: Props) => {
     const [shift, setShift] = useState(0)
-    console.log(shift)
     return (
         <div className={style.carousel}>
             <div className={style.carousel_btn_block}>
@@ -16,7 +15,10 @@ const Carousel = ({ arrayPicture }: Props) => {
 
             </div>
             {arrayPicture.map((img, index) => <img src={img} alt="img" className={style.carousel_img} style={{ transform: `translateX(${shift * 100}%)` }} key={index} />
+               
             )}
+
+         
 
         </div>
     )

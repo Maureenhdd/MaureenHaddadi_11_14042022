@@ -6,16 +6,15 @@ import { useState } from "react";
 type Props = {
     title: string;
     text: string | ReactNode;
-    id?: number;
-    list? : string[]
+    center?: boolean
 };
 
 
-const Accordion = ({ text, title, id, list}: Props) => {
+const Accordion = ({ text, title, center}: Props) => {
     const [active, setActive] = useState(false)
     return (
         <>
-            <div className={styles.accordion} key={id}>
+            <div className={`${styles.accordion} ${center ? styles.center : ''}`}>
                 <div className={styles.accordion_top}><p>{title} </p>
                     {
                         active ? <button className={styles.accordion_btn} onClick={() => {

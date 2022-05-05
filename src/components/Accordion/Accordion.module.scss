@@ -1,54 +1,73 @@
 @import "./../../assets/scss/variables";
 
 .accordion {
-    width : 85%; 
-    margin : 30px auto; 
+    width: 85%;
+    margin: 30px 0;
+
     &_top {
         display: flex;
         justify-content: space-between;
         align-items: center;
         background-color: $primary-color;
         border-radius: 10px;
-        padding : 5px 20px; 
-        color : #ffffff; 
+        padding: 5px 20px;
+        color: #ffffff;
         font-size: 24px;
         font-weight: 500;
     }
 
-    &_content{
+    &_content {
         background-color: $secondary-color;
         color: $primary-color;
-        padding : 10px; 
+        padding: 10px 20px;
         border-radius: 10px;
         font-size: 24px;
         transition: 0.2s;
     }
 
     &_hidden {
-        height  : 0 ;
-        overflow: hidden;   
-        padding  : 0;      
+        height: 0;
+        overflow: hidden;
+        padding: 0;
     }
 
     &_active {
         height: auto;
     }
 
-    &_btn{
+    &_btn {
         background-color: transparent;
-        border : none;
-        color : white; 
+        border: none;
+        color: white;
         cursor: pointer;
+    }
+
+ 
+    @media (max-width : 1024px) {
+        margin: 10px 0;
+
+
     }
 }
 
-.i{
-    &_btn{
+.i {
+    &_btn {
         font-size: 24px;
         transition: 0.2s;
     }
-    &_active{
+
+    &_active {
         transform: rotate(180deg);
     }
 
 }
+
+
+.center{
+    margin : 30px auto;
+    
+    @media (max-width : 1024px) {
+        margin: 10px auto;
+    }
+}
+

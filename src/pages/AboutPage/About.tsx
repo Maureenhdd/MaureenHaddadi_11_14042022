@@ -29,10 +29,9 @@ const About = () => {
       <Header />
       <div className="main">
         <Banner img={BannerImg} />
-
         {aboutData.map((value, i) => {
           return (
-            <Accordion id={i} title={value.title} text={value.text} />
+            <Accordion key={i} title={value.title} text={value.text} center={true} />
           )
         })}
 

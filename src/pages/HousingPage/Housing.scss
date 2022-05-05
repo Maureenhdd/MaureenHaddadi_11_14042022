@@ -2,12 +2,38 @@
 
 
 .housing{
+    &_top{
+        display :flex; 
+        justify-content: space-between;
+    }
+    &_title, &_location{
+        color : $primary-color;
+        font-weight: 500; 
+    }
     &_title{
-        color : $primary-color; 
+        font-size : 36px;
+        margin-bottom: 0;
+
+    }
+
+    &_location{
+        font-size: 18px;
+        margin-top: 5px;
+    }
+    &_tag_block{
+        display: flex;
+        margin: 20px 0; 
     }
 }
 
 .accordion_block{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    @media (max-width : 1024px) {
+        flex-wrap: wrap;
+    }
+}
+
+.accordion_block>div{
+    width : 50%;
 }
