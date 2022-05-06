@@ -9,7 +9,7 @@ import Accordion from '../../components/Accordion/Accordion'
 import Footer from '../../components/Footer/Footer';
 import Tag from '../../components/Tag/Tag'
 import UserRating from '../../components/UserRating/UserRating';
-
+import UserProfile from '../../components/UserProfile/UserProfile';
 
 const Housing = () => {
     const id = useParams()
@@ -26,17 +26,19 @@ const Housing = () => {
                     <div className="housing_top_left">
                         <h1 className='housing_title'>{rental?.title}</h1>
                         <p className='housing_location'>{rental?.location}</p>
+                        <div className="housing_tag_block">
+                            {rental!.tags.map((tag, index) => <Tag text={tag} key={index} />)}
+                        </div>
                     </div>
 
                     <div className="housing_top_right">
+                        <UserProfile name={rental!.host.name} img={rental!.host.picture} />
                         <UserRating rating={rental!.rating} />
                     </div>
 
                 </div>
 
-                <div className="housing_tag_block">
-                    {rental!.tags.map((tag, index) => <Tag text={tag} key={index} />)}
-                </div>
+
                 <div className="accordion_block">
                     <div>
                         <Accordion title='Description' text={rental!.description} />

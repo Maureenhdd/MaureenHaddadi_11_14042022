@@ -2,18 +2,24 @@
 
 
 
-.colored{
-    color : $primary-color; 
+.colored {
+    color: $primary-color;
 }
 
-.grey{
-    color : #E3E3E3; 
+.grey {
+    color: #E3E3E3;
 }
 
-.stars_block{
-    padding : 30px;
+.stars_block {
+    padding: 0 30px;
 }
-.star_i{
+
+.star_i {
     font-size: 30px;
-    margin-right : 5px;
+    margin-right: 5px;
+
+    @media (max-width : 1024px) {
+        font-size: 12px;
+
+    }
 }

@@ -2,18 +2,19 @@
 
 .tag {
     background-color: $primary-color;
-    border-radius: 25px;
-    margin : 0 20px 0 0 ; 
-    padding : 0px 50px; 
-    &_content{
+    border-radius: 20px;
+    margin: 0 15px 0 0;
+    padding: 0px 40px;
+
+    &_content {
         font-weight: 500;
         color: white;
         font-size: 14px;
     }
 
     @media (max-width : 1024px) {
-        padding : 0px 20px; 
-        margin : 0 10px 0 0 ; 
+        padding: 0px 20px;
+        margin: 10px 10px 0 0;
 
 
     }

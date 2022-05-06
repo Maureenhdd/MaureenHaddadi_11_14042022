@@ -1,39 +1,63 @@
 @import "./../../assets/scss/variables";
 
 
-.housing{
-    &_top{
-        display :flex; 
+.housing {
+    &_top {
+        display: flex;
         justify-content: space-between;
+
+        @media (max-width : 1024px) {
+            flex-direction: column;
+        }
+
+        &_right {
+            @media (max-width : 1024px) {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row-reverse;
+                align-items: center;
+            }
+        }
     }
-    &_title, &_location{
-        color : $primary-color;
-        font-weight: 500; 
+
+    &_title,
+    &_location {
+        color: $primary-color;
+        font-weight: 500;
     }
-    &_title{
-        font-size : 36px;
+
+    &_title {
+        font-size: 36px;
         margin-bottom: 0;
 
     }
 
-    &_location{
+    &_location {
         font-size: 18px;
         margin-top: 5px;
     }
-    &_tag_block{
+
+    &_tag_block {
         display: flex;
-        margin: 20px 0; 
+        flex-wrap: wrap;
+        margin: 20px 0;
     }
 }
 
-.accordion_block{
+.accordion_block {
     display: flex;
     justify-content: space-around;
+
     @media (max-width : 1024px) {
         flex-wrap: wrap;
+        flex-direction: column;
     }
 }
 
-.accordion_block>div{
-    width : 50%;
+.accordion_block>div {
+    width: 50%;
+
+    @media (max-width : 1024px) {
+        width: 100%;
+    }
 }
