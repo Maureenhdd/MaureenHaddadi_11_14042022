@@ -21,8 +21,6 @@ const Carousel = ({ arrayPicture }: Props) => {
 
             )}
 
-
-
         </div>
     )
 }

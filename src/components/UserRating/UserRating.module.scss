@@ -11,7 +11,10 @@
 }
 
 .stars_block {
-    padding: 0 30px;
+    padding: 20px 30px;
+    @media (max-width : 1024px) {
+        padding : 0
+    }
 }
 
 .star_i {
@@ -19,7 +22,16 @@
     margin-right: 5px;
 
     @media (max-width : 1024px) {
-        font-size: 12px;
+        font-size: 15px;
+
 
     }
+}
+
+ul{
+    padding : 0 ;
+}
+
+ul > li {
+    list-style: none;
 }
