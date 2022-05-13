@@ -1,4 +1,3 @@
-import { ReactNode } from 'react';
 import style from './UserProfile.module.scss'
 type Props = {
     img: string

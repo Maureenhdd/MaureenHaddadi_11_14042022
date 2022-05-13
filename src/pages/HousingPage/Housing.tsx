@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import Header from '../../components/Header/Header'
 import data from '../../data/data.json'
@@ -13,7 +12,6 @@ import UserProfile from '../../components/UserProfile/UserProfile';
 
 const Housing = () => {
     const id = useParams()
-    console.log(id.id)
     const rental = data.find((item) => item.id === id.id);
     const pictures: any = rental?.pictures
 
