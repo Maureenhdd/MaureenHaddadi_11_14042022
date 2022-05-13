@@ -19,4 +19,5 @@ const UserProfile = ({ img, name }: Props) => {
 
 
 
+
 export default UserProfile
