@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { Navigate, useParams } from 'react-router-dom'
 import Header from '../../components/Header/Header'
 import data from '../../data/data.json'
 import "./../../assets/scss/main.scss";
@@ -14,7 +14,9 @@ const Housing = () => {
     const id = useParams()
     const rental = data.find((item) => item.id === id.id);
     const pictures: any = rental?.pictures
-
+    // if (!rental) {
+    //     return <Navigate to="*" />;
+    // }
     return (
         <>
             <Header />
