@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import "./../../assets/scss/main.scss";
 import styles from "./Cards.module.scss";

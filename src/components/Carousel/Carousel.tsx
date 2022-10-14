@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import style from './Carousel.module.scss'
 type Props = {
     arrayPicture: string[]
@@ -7,7 +7,6 @@ type Props = {
 
 const Carousel = ({ arrayPicture }: Props) => {
     const [shift, setShift] = useState(0)
-    console.log(shift)
     return (
         <div className={style.carousel}>
 
@@ -16,8 +15,6 @@ const Carousel = ({ arrayPicture }: Props) => {
                     <button className={style.carousel_btn} onClick={() => setShift(shift === arrayPicture.length - 1 ? 0 : shift + 1)}><i className={`fa-solid fa-chevron-right ${style.carousel_i}`}></i></button></div>
 
             }
-
-
 
             {arrayPicture.map((img, index) => <img src={img} alt="img" className={style.carousel_img} style={{ transform: `translateX(${-(shift) * 100}%)` }} key={index} />
 

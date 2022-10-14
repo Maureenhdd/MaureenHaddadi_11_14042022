@@ -4,7 +4,8 @@ import { BrowserRouter } from "react-router-dom";
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
-import App from './App';
+import Router from './Router';
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -12,7 +13,8 @@ const root = ReactDOM.createRoot(
 root.render(
   <BrowserRouter>
     <React.StrictMode>
-      <App />
+      <ScrollToTop />
+      <Router />
     </React.StrictMode>
   </BrowserRouter>
 );

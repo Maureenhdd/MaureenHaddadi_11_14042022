@@ -1,73 +1,76 @@
 @import "./../../assets/scss/variables";
 
 .accordion {
-    width: 85%;
-    margin: 30px 0;
+  width: 85%;
+  margin: 30px 0;
 
-    &_top {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: $primary-color;
-        border-radius: 10px;
-        padding: 5px 20px;
-        color: #ffffff;
-        font-size: 24px;
-        font-weight: 500;
-    }
+  &_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $primary-color;
+    border-radius: 10px;
+    padding: 5px 20px;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 500;
+  }
 
-    &_content {
-        background-color: $secondary-color;
-        color: $primary-color;
-        padding: 10px 20px;
-        border-radius: 10px;
-        font-size: 24px;
-        transition: 0.2s;
-    }
+  &_content {
+    background-color: $secondary-color;
+    color: $primary-color;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 24px;
+    transition: 0.2s;
+  }
 
-    &_hidden {
-        height: 0;
-        overflow: hidden;
-        padding: 0;
-    }
+  &_hidden {
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+  }
 
-    &_active {
-        height: auto;
-    }
+  &_active {
+    height: auto;
+  }
 
-    &_btn {
-        background-color: transparent;
-        border: none;
-        color: white;
-        cursor: pointer;
-    }
+  &_btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
 
-
-    @media (max-width : 1024px) {
-        margin: 10px 0;
-        width: 100%;
-
-
-    }
+  @media (max-width: 1024px) {
+    margin: 10px 0;
+    width: 100%;
+  }
 }
 
 .i {
-    &_btn {
-        font-size: 24px;
-        transition: 0.2s;
-    }
+  &_btn {
+    font-size: 24px;
+    transition: 0.2s;
+  }
 
-    &_active {
-        transform: rotate(180deg);
-    }
-
+  &_active {
+    transform: rotate(180deg);
+  }
 }
 
-
 .center {
-    margin: 30px auto;
+  margin: 30px auto;
 
-    @media (max-width : 1024px) {
-        margin: 10px auto;
-    }
+  @media (max-width: 1024px) {
+    margin: 10px auto;
+  }
+}
+
+.left {
+  margin-left: auto;
+
+  @media (max-width: 1024px) {
+    margin: 10px auto;
+  }
 }

@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 import "./../../assets/scss/main.scss";
 import styles from "./Accordion.module.scss";
 import { useState } from "react";
@@ -6,15 +6,16 @@ import { useState } from "react";
 type Props = {
     title: string;
     text: string | ReactNode;
-    center?: boolean
+    center?: boolean,
+    left?: boolean
 };
 
 
-const Accordion = ({ text, title, center}: Props) => {
+const Accordion = ({ text, title, center, left }: Props) => {
     const [active, setActive] = useState(false)
     return (
         <>
-            <div className={`${styles.accordion} ${center ? styles.center : ''}`}>
+            <div className={`${styles.accordion} ${center ? styles.center : ''} ${left ? styles.left : ""}`}>
                 <div className={styles.accordion_top}><p>{title} </p>
                     {
                         active ? <button className={styles.accordion_btn} onClick={() => {
@@ -27,7 +28,7 @@ const Accordion = ({ text, title, center}: Props) => {
                 </div>
 
                 <div className={`${styles.accordion_content} ${active ? styles.accordion_active : styles.accordion_hidden}`}>
-                   {typeof text === 'string' ? <p>{text}</p>  : <ul>{text}</ul>}
+                    {text === 'string' ? <p>{text}</p> : <ul>{text}</ul>}
                 </div>
             </div>
 
